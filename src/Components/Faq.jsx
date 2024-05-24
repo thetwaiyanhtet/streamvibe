@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { QButton } from "./Buttons";
+import { AskQuestion } from "./Buttons";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { qAndA } from "../Assets/faq";
 
@@ -14,17 +14,17 @@ const QA = () => {
 
   return (
     <div>
-      <div className="text-2xl flex flex-wrap gap-5 py-5 justify-center">
+      <div className="md:text-2xl md:flex md:flex-wrap gap-7 py-5 justify-center">
         {qAndA.map((item, index) => (
           <div
             key={index}
-            className="flex justify-between items-center w-[45%] gap-5 p-3"
+            className="flex justify-between items-center md:w-[600px] gap-5 p-3"
             onClick={() => handleClick(index)}
           >
             <div className="bg-glass h-10 w-10 p-2 rounded-md flex justify-center items-center">
               {index + 1}
             </div>
-            <div>
+            <div className=" w-[80%]">
               <p>{item.question}</p>
               <p className={`text-base text-gray-500 answer ${openIndex === index ? "answer-visible" : ""}`}>
                 {item.answer}
@@ -52,7 +52,7 @@ const Faq = () => {
           </p>
         </div>
         <div className="flex items-start">
-          <QButton />
+          <AskQuestion />
         </div>
       </div>
       <QA />

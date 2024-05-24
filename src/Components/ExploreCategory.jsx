@@ -1,5 +1,5 @@
 import React from "react";
-import imagePaths from "../Assets/images";
+import movies from "../Assets/movies";
 import { FaArrowRight } from 'react-icons/fa';
 
 const CategoryCard = ({ start = 0, count = 4, name = "" }) => {
@@ -7,8 +7,8 @@ const CategoryCard = ({ start = 0, count = 4, name = "" }) => {
     <div className="relative bg-glass md:w-60 w-40 md:h-[270px] h-52 p-3 rounded-md border-gray-900 border">
       {/* Background images */}
       <div className="flex flex-wrap gap-1 p-3">
-        {imagePaths.slice(start, start + count).map((item, index) => (
-          <img key={index} src={item} alt="..." className="w-[48%] md:h-24 h-16 object-cover rounded-md" />
+        {movies.slice(start, start + count).map((item, index) => (
+          <img key={index} src={item.coverImg} alt="..." className="w-[48%] md:h-24 h-16 object-cover rounded-md" />
         ))}
       </div>
       {/* Glass effect layers */}

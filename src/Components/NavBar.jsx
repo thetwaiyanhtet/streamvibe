@@ -1,19 +1,16 @@
-import React,{useState} from "react";
+import React from "react";
 import logo from "../Assets/streamVibeLogo.png";
 import { FaSearch,FaBell} from 'react-icons/fa';
 import { CgMenuRight } from "react-icons/cg";
-
+import { NavLink} from 'react-router-dom'
 const menus = [
     "home",
-    "movies&show",
+    "movies&shows",
     "support",
     "subscriptions"
 ]
 
 const NavBar = () => {
-
-    const [menu, setMenu] = useState("home");
-
 
   return (
     <div className=" py-8 px-20 w-full fixed z-10">
@@ -23,9 +20,17 @@ const NavBar = () => {
           <p className=" md:text-xl">StreamVibe</p>
         </div>
         <div className=" md:flex gap-8 p-2 bg-primary backdrop-blur-3xl shadow-lg border-4 border-gray-800 rounded-md hidden">
-            {menus.map((item, index)=>(
-                 <li key={index} className={` list-none cursor-pointer px-2 py-3 duration-300  ${menu === item ? "bg-glass rounded-md" : ""}`} onClick={ () => setMenu(item)}>{item}</li>
-            ))}
+        {menus.map((item, index) => (
+            <NavLink
+              key={index}
+              to={`/${item}`}
+              className={({ isActive }) =>
+                `list-none cursor-pointer px-2 py-3 duration-300 ${isActive ? "bg-glass rounded-md" : ""}`
+              }
+            >
+              {item}
+            </NavLink>
+          ))}
         </div>
         <div className=" md:flex hidden gap-7 ">
             <FaSearch size={20} className=" cursor-pointer"/>

@@ -12,9 +12,10 @@ module.exports = {
         primary: "black",
         secondary: "#a855f7",
         tBase: "white",
-        tSecondary:"#4C4C4C",
+        tSecondary:"#999999",
         buttonPrimary: "#E50000",
-        glass: "#141414"
+        glass: "#141414",
+        bdPrimary:"#262626"
       }
     },
   },

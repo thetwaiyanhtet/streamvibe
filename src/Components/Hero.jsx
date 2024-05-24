@@ -1,18 +1,18 @@
 import React from "react";
-import imagePaths from "../Assets/images";
-import { WButton } from "./Buttons";
+import movies from "../Assets/movies";
+import { WatchNow } from "./Buttons";
 
 const Hero = () => {
   return (
     <div className=" flex justify-center items-center">
       <div className=" md:flex hidden flex-wrap gap-2">
-        {imagePaths.map((item, index) => (
-          <img key={index} src={item} alt="..." className=" w-40 mx-auto" />
+        {movies.map((item, index) => (
+          <img key={index} src={item.coverImg} alt="..." className=" w-40 mx-auto" />
         ))}
       </div>
       <div className=" flex flex-wrap gap-2 md:hidden">
-        {imagePaths.slice(0, 12).map((item, index) => (
-          <img key={index} src={item} alt="..." className=" w-28 mx-auto" />
+        {movies.slice(0, 12).map((item, index) => (
+          <img key={index} src={item.coverImg} alt="..." className=" w-28 mx-auto" />
         ))}
       </div>
       <div className=" w-full h-full bg-gradient-to-b from-gray-600 via-transparent to-primary absolute"></div>
@@ -26,7 +26,7 @@ const Hero = () => {
           create your own watchlists, so you can easily find the content you
           want to watch.
         </p>
-        <WButton />
+        <WatchNow />
       </div>
     </div>
   );

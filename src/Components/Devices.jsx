@@ -37,11 +37,11 @@ import { FaMobile, FaTablet, FaTv, FaLaptop, FaGamepad,FaHeadset} from 'react-ic
 const Card = () =>{
     return(
         <div>
-            <div className=" grid grid-cols-3">
+            <div className=" grid md:grid-cols-3 gap-4">
                 {devices.map((item, index)=>(
-                    <div key={index} className=" p-5 space-y-4">
+                    <div key={index} className=" space-y-4 border rounded-md border-bdPrimary px-6 py-10 bg-gradient-to-r from-gray-900 via-transparent to-red-950">
                         <div className=" flex items-center gap-3">
-                            <p className=" text-buttonPrimary text-3xl">{item.icon}</p>
+                            <p className=" text-buttonPrimary text-3xl bg-glass p-3 rounded-md border-gray-800 border">{item.icon}</p>
                             <p>{item.name}</p>
                         </div>
                         <p>
@@ -57,7 +57,7 @@ const Card = () =>{
 const Devices = () => {
   return (
     <div className=" p-5 md:px-20">
-      <div>
+      <div className=" mb-10">
         <h1>we provide you streaming experience across various devices.</h1>
         <p className=" text-tSecondary max-w-screen-xl leading-6">
           With StreamVibe, you can enjoy your favorite movies and TV shows
