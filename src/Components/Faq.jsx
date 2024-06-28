@@ -42,11 +42,11 @@ const QA = () => {
 
 const Faq = () => {
   return (
-    <div className="p-5 md:px-20">
+    <div className="p-5 md:px-20  md:my-0 my-10">
       <div className="md:flex justify-between items-end space-y-5 md:space-y-0">
         <div>
-          <h1>frequently asked questions</h1>
-          <p className=" text-tSecondary">
+          <h1 className="  md:text-4xl text-2xl">frequently asked questions</h1>
+          <p className=" text-tSecondary md:mt-0 mt-3">
             got questions? we've got answers! check out our FAQ section to find
             answers to the most common questions about streamvibe.
           </p>

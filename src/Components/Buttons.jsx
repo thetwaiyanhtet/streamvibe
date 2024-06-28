@@ -12,6 +12,16 @@ export const WatchNow = () => {
   );
 };
 
+export const SendMessage = () => {
+  return (
+    <div>
+      <button className=" bg-buttonPrimary rounded-md px-4 py-3 flex items-center gap-2 mx-auto">
+        <p>Send Message</p>
+      </button>
+    </div>
+  );
+};
+
 export const AskQuestion = () => {
   return (
     <div>

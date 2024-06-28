@@ -1,21 +1,48 @@
 const plans = [
     {
-        title: "Basic Plan",
+        title: "Basic",
         detail: "Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.",
         pricePerMonth: "$9.99",
-        pricePerYear: "$110.88"
+        pricePerYear: "$110.88",
+        content: "Access to a wide selection of movies and shows, including some new releases.",
+        devices: 2,
+        freeTrial: 7,
+        cancelAnytime: true,
+        hdr: false,
+        dolbyAtmos: false,
+        adFree: false,
+        offlineView: false,
+        familySharing: false,
     },
     {
-        title: "Standard Plan",
+        title: "Standard",
         detail: "Access to a wider selection of movies and shows, including most new releases and exclusive content",
         pricePerMonth: "$12.99",
-        pricePerYear: "$150.88"
+        pricePerYear: "$150.88",
+        content: "Access to a wider selection of movies and shows, including most new releases and exclusive content.",
+        devices: 4,
+        freeTrial: 7,
+        cancelAnytime: true,
+        hdr: true,
+        dolbyAtmos: true,
+        adFree: true,
+        offlineView: true,
+        familySharing: true,
     },
     {
-        title: "Premium Plan",
+        title: "Premium",
         detail: "Access to a widest selection of movies and shows, including all new releases and Offline Viewing",
         pricePerMonth: "$14.99",
-        pricePerYear: "$170.88"
+        pricePerYear: "$170.88",
+        content: "Access to a widest selection of movies and shows, including all new releases and offline viewing.",
+        devices: 6,
+        freeTrial: 7,
+        cancelAnytime: true,
+        hdr: true,
+        dolbyAtmos: true,
+        adFree: true,
+        offlineView: true,
+        familySharing: true,
     }
 ]
 

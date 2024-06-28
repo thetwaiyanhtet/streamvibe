@@ -27,7 +27,7 @@ const SubscriptionPlan = () => {
             key={index}
             className=" border border-bdPrimary bg-glass rounded-md px-10 py-5"
           >
-            <h1 className=" md:text-3xl text-xl font-semibold">{item.title}</h1>
+            <h1 className=" md:text-3xl text-xl font-semibold">{item.title} plan</h1>
             <p className=" text-tSecondary md:text-base text-sm">{item.detail}</p>
             {plan === "month" && (<h1 className=" text-xl md:text-3xl font-semibold">
               {item.pricePerMonth}/ <sub className=" text-tSecondary">month</sub>

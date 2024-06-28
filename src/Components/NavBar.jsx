@@ -13,7 +13,7 @@ const menus = [
 const NavBar = () => {
 
   return (
-    <div className=" py-8 px-20 w-full fixed z-10">
+    <div className=" py-5 px-20 w-full fixed z-10">
       <nav className=" flex justify-between items-center">
         <div className=" flex items-center gap-1 cursor-pointer">
           <img src={logo} alt="..." className=" md:w-14 w-10" />

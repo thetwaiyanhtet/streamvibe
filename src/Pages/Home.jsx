@@ -10,7 +10,7 @@ import FreeTrial from "../Components/FreeTrial";
 
 const Home = () => {
   return (
-    <div className="capitalize">
+    <div>
       <NavBar />
       <Hero />
       <ExploreCategory/>
