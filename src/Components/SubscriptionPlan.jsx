@@ -25,7 +25,7 @@ const SubscriptionPlan = () => {
         {plans.map((item, index) => (
           <div
             key={index}
-            className=" border border-bdPrimary bg-glass rounded-md px-10 py-5"
+            className=" border border-bdPrimary bg-glass rounded-md space-y-5 px-10 py-5"
           >
             <h1 className=" md:text-3xl text-xl font-semibold">{item.title} plan</h1>
             <p className=" text-tSecondary md:text-base text-sm">{item.detail}</p>
