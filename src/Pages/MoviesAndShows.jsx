@@ -16,26 +16,28 @@ const MoviesAndShows = () => {
     <div>
       <NavBar />
       <PreviewScreen data={movieList} />
+      {/* menu choose for mobile view */}
       <div className=" flex justify-center md:hidden mb-14">
-        <div className=" w-60 border rounded-md p-3 flex items-center justify-center">
+        <div className=" mx-5 w-full border border-bdPrimary rounded-md p-3 flex items-center justify-center">
           <div
             className={`${
-              type === "movies" ? " border rounded-md bg-glass " : ""
-            }p-3 w-[120px] text-center`}
+              type === "movies" ? " border border-bdPrimary rounded-md bg-glass " : ""
+            }p-3 w-40 text-center`}
             onClick={() => setType("movies")}
           >
             movies
           </div>
           <div
             className={`${
-              type === "shows" ? " border rounded-md bg-glass " : ""
-            }p-3 w-[120px] text-center`}
+              type === "shows" ? " border border-bdPrimary rounded-md bg-glass " : ""
+            }p-3 w-40 text-center`}
             onClick={() => setType("shows")}
           >
             shows
           </div>
         </div>
       </div>
+      {/* **** */}
       <div className="md:block hidden space-y-24">
         <Movies />
         <Shows />

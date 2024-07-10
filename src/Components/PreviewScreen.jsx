@@ -26,7 +26,7 @@ const PreviewScreen = ({data}) => {
   };
 
   return (
-    <div className="py-28 md:px-20">
+    <div className="md:py-28 py-10 pt-24 mx-5 md:px-20">
       <div className="relative">
         <div className="mx-auto">
           <div
@@ -49,7 +49,7 @@ const PreviewScreen = ({data}) => {
         </div>
         {!isHovered && (
           <div>
-            <div className="flex flex-col items-center justify-center mb-5 absolute md:bottom-20 bottom-7 md:left-[13%] left-[25%]">
+            <div className="flex flex-col items-center justify-center mb-5 absolute md:bottom-20 bottom-0 md:left-[13%] left-[25%]">
               <h1 className="font-semibold">
                 {data[currentMovieIndex].title}
               </h1>
@@ -58,7 +58,7 @@ const PreviewScreen = ({data}) => {
               </p>
               <div className="flex md:flex-row flex-col justify-center items-center gap-4 mt-5">
                 <PlayNow />
-                <div className=" flex gap-2">
+                <div className=" md:flex gap-2 hidden">
                   <Plus />
                   <ThumbsUp />
                   <Voulme />

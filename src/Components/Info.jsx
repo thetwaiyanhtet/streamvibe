@@ -12,7 +12,7 @@ const selectedMovie = movies[41];
 const Info = () => {
   return (
     <div>
-      <div className=" p-10 m-5 border rounded-md bg-glass space-y-5">
+      <div className=" p-5 border rounded-md bg-glass space-y-5">
         <div className=" space-y-2">
           <div className=" flex gap-1 info-title">
             <FaCalendar />

@@ -17,7 +17,7 @@ const MoviePage = () => {
       <NavBar />
       {/* <MoviePreview /> */}
       <PreviewScreen data={movieList} />
-      <div className="p-5 md:px-20 flex gap-5 md:flex-row flex-col">
+      <div className="p-5 md:px-20 flex md:flex-row flex-col md:space-x-5 space-x-0 md:space-y-0 space-y-5 ">
         <Info />
         <div className="md:flex flex-col space-y-5">
           <Description />

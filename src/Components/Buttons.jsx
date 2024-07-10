@@ -58,7 +58,7 @@ export const ChoosePlan = () =>{
 
 export const PlayNow = () => {
   return (
-    <div>
+    <div className=" md:block hidden">
       <button className="bg-buttonPrimary rounded-md px-4 py-3 flex items-center gap-2"><FaPlay />Play Now</button>
     </div>
   )

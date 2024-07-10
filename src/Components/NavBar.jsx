@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 const menus = ["home", "movies&shows", "support", "subscriptions"];
 
 const NavBar = () => {
-  const [openMenu, setOpenMenu] = useState(null);
+  const [openMenu, setOpenMenu] = useState("home");
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };

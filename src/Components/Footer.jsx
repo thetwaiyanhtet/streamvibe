@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="flex justify-between py-10 md:flex-nowrap flex-wrap">
           {footerMenu.map((section, index) => (
             <div key={index} className=" p-3">
-              <h3 className="text-xl mb-3">{section[0]}</h3>
+              <h3 className="text-xl mb-3 cursor-pointer hover:underline">{section[0]}</h3>
               <ul className="list-none">
                 {section.slice(1).map((item, subIndex) => (
                   <li key={subIndex} className="mb-2">
@@ -47,11 +47,11 @@ const Footer = () => {
           ))}
         </div>
         <div className=" md:flex md:space-y-0 space-y-5 justify-between border-t py-7 border-glass">
-            <div className=" md:text-base text-sm">@2024 StreamVibe,All rights Reserved</div>
+            <div className=" md:text-base text-sm cursor-pointer">@2024 StreamVibe,All rights Reserved</div>
             <ul className=" flex gap-5 md:text-base text-sm">
-                <li>Terms of Use</li>
-                <li className=" border-r border-l px-5 border-glass">Privacy Policy</li>
-                <li>Cookie Policy</li>
+                <li className=" cursor-pointer">Terms of Use</li>
+                <li className=" border-r border-l px-5 border-glass cursor-pointer">Privacy Policy</li>
+                <li className=" cursor-pointer">Cookie Policy</li>
             </ul>
         </div>
     </footer>

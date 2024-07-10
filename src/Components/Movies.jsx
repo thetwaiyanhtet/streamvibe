@@ -1,7 +1,7 @@
 import React from "react";
 import Genres from "./Genres";
 import PopularTopTen from "./PopularTopTen";
-import TrendingNow from "./TrendingMovies";
+import TrendingMovies from "./TrendingMovies";
 import NewReleased from "./NewReleasedMovies";
 import MustWatchMovies from "./MustWatchMovies";
 
@@ -16,7 +16,7 @@ const Movies = () => {
         </div>
         <Genres />
         <PopularTopTen />
-        <TrendingNow/>
+        <TrendingMovies/>
         <NewReleased />
         <MustWatchMovies />
       </div>

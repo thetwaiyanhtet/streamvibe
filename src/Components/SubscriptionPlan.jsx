@@ -29,10 +29,10 @@ const SubscriptionPlan = () => {
           >
             <h1 className=" md:text-3xl text-xl font-semibold">{item.title} plan</h1>
             <p className=" text-tSecondary md:text-base text-sm">{item.detail}</p>
-            {plan === "month" && (<h1 className=" text-xl md:text-3xl font-semibold">
+            {plan === "month" && (<h1 className=" text-xl md:text-3xl font-semibold duration-200">
               {item.pricePerMonth}/ <sub className=" text-tSecondary">month</sub>
             </h1>)}
-            {plan === "year" && (<h1 className=" text-xl md:text-3xl font-semibold">
+            {plan === "year" && (<h1 className=" text-xl md:text-3xl font-semibold duration-200">
               {item.pricePerYear}/ <sub className=" text-tSecondary">year</sub>
             </h1>)}
             <div className=" flex gap-3 md:text-base text-sm">

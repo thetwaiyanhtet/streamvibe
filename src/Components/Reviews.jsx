@@ -37,7 +37,7 @@ const ReviewCard = () => {
 const Reviews = () => {
   return (
     <div>
-      <div className="p-10 m-5 border rounded-md">
+      <div className="p-5 border rounded-md">
         <div className=" flex justify-between items-center ">
           <h4 className=" md:text-base text-xl">reviews</h4>
           <p className=" flex gap-3 md:p-3 p-1.5 items-center border rounded-md bg-glass">
@@ -45,7 +45,7 @@ const Reviews = () => {
             add your review
           </p>
         </div>
-        <div className=" flex justify-between my-7">
+        <div className=" flex justify-between my-7 ">
           <ReviewCard />
         </div>
         <div className="flex gap-1 justify-center">

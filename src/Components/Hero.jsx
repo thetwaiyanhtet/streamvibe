@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className=" flex justify-center items-center">
       <div className=" md:flex hidden flex-wrap gap-2">
-        {movies.map((item, index) => (
+        {movies.slice(0,36).map((item, index) => (
           <img key={index} src={item.coverImg} alt="..." className=" w-40 mx-auto" />
         ))}
       </div>
@@ -15,7 +15,7 @@ const Hero = () => {
           <img key={index} src={item.coverImg} alt="..." className=" w-28 mx-auto" />
         ))}
       </div>
-      <div className=" w-full h-full bg-gradient-to-b from-gray-600 via-transparent to-primary absolute"></div>
+      <div className=" inset-0 bg-gradient-to-b from-gray-600 via-transparent to-primary absolute"></div>
       <div className=" absolute text-center bottom-12">
         <h1>the best streaming experience</h1>
         <p className=" max-w-screen-xl mb-4 md:line-clamp-none line-clamp-3 leading-6">

@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const CategoryCard = ({ start = 0, count = 4, name = "" }) => {
   return (
-    <div className="relative bg-glass md:w-60 w-40 md:h-[270px] h-52 p-3 rounded-md border-gray-900 border">
+    <div className="relative bg-glass md:w-60 min-w-40 md:h-[270px] h-52 p-3 rounded-md border-gray-900 border">
       {/* Background images */}
       <div className="flex flex-wrap gap-1 p-3">
         {movies.slice(start, start + count).map((item, index) => (

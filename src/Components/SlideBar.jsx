@@ -1,14 +1,16 @@
 import React from "react";
 
-const SlideBar = () => {
+const SlideBar = ({ currentItem, totalItems }) => {
   return (
-    <div className=" flex justify-center">
-      <div className=" flex justify-center bg-gray-700 w-20">
-        <div className="w-5 h-1 rounded-md bg-buttonPrimary"></div>
-        <div className="w-5 h-1 rounded-md"></div>
-        <div className="w-5 h-1 rounded-md"></div>
-        <div className="w-5 h-1 rounded-md"></div>
-      </div>
+    <div className="flex ">
+      {Array.from({ length: totalItems }).map((_, index) => (
+        <div
+          key={index}
+          className={`h-2 w-4 rounded-md ${
+            currentItem === index ? "bg-blue-500" : "bg-gray-300"
+          }`}
+        ></div>
+      ))}
     </div>
   );
 };

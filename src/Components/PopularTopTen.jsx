@@ -13,7 +13,7 @@ const PopularTopTen = () => {
             <MiniSlider />
           </div>
         </div>
-        <div className="flex justify-between my-10 overflow flex-wrap overflow-hidden gap-2">
+        <div className="flex justify-between my-10 overflow-x-scroll hide-scrollbar gap-5">
           <CategoryCard start={0} name="Action" />
           <CategoryCard start={4} name="Comedy" />
           <CategoryCard start={8} name="Drama" />
